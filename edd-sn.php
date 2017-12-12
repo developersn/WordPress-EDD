@@ -141,7 +141,7 @@ function pp_process_payment ($purchase_data) {
 				
 				edd_insert_payment_note( $payment, ' شناسه = ' . $payment . '| شناسه پیگیری = ' . $json['au'] );
 				echo "<div style='display:none'>{$json['form']}</div>Please wait ... <script language='javascript'>document.payment.submit(); </script>";
-            echo "<html><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /> <head><title>Connecting ....</title><head><body onload=\"javascript:window.location='$PayPath'\" style=\"font-family:tahoma; text-align:center;font-waight:bold;direction:rtl\">در حال اتصال به درگاه پرداخت آرین پال ...</body></html>";
+
             exit;
         }
         else
